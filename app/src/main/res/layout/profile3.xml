@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/buttonGet"
+            android:text="Get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignRight="@+id/btn3_call"
+        android:layout_alignEnd="@+id/btn3_call"
+        android:layout_marginTop="91dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:text="Detail"
+        android:id="@+id/btn_1"
+        android:background="@drawable/detail"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="0dp" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:text="Medical"
+        android:id="@+id/btn_2"
+        android:background="@drawable/medical"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/btn_1"
+        android:textSize="0dp" />
+
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:text="Parental"
+        android:id="@+id/btn_3"
+        android:background="@drawable/parental"
+        android:layout_weight="0.09"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignTop="@+id/btn_2"
+        android:textSize="0dp"
+        android:backgroundTint="#36b0c2"
+        android:backgroundTintMode="screen" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:text="Academical"
+        android:id="@+id/btn_4"
+        android:background="@drawable/academic"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_3"
+        android:layout_toEndOf="@+id/btn_3"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignTop="@+id/btn_3"
+        android:textSize="0dp" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="SMS"
+        android:id="@+id/btn3_sms"
+        android:background="@drawable/btnmsg"
+        android:layout_alignBaseline="@+id/btn_3"
+        android:layout_alignBottom="@+id/btn_3"
+        android:layout_toRightOf="@+id/btn_3"
+        android:layout_toEndOf="@+id/btn_3"
+        android:textSize="0dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Call"
+        android:id="@+id/btn3_call"
+        android:layout_alignTop="@+id/btn3_sms"
+        android:layout_toRightOf="@+id/btn3_sms"
+        android:layout_toEndOf="@+id/btn3_sms"
+        android:background="@drawable/btncall"
+        android:textSize="0dp" />
+
+</RelativeLayout>
