@@ -5,5 +5,5 @@ Student's Medical Background (SMedB) Checker is an android based applications th
 
 # System Module
 * Manage user profile
-* Check student's medical background information using manual or automated (Barcode scanning) data entry
+* Check student's medical background information by manual or automated (Barcode scanning) data entry
 * Trigger emergency button to notify student's guardian.
